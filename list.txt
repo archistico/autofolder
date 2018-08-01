@@ -1,0 +1,13 @@
+2018
+	Fatture emesse
+		01-fat-emesse-gen-feb-mar
+		02-fat-emesse-apr-mag-giu
+		03-fat-emesse-lug-ago-set
+		04-fat-emesse-ott-nov-dic
+	Fatture ricevute
+		01-fat-ricevute-gen-feb-mar
+		02-fat-ricevute-apr-mag-giu
+		03-fat-ricevute-lug-ago-set
+		04-fat-ricevute-ott-nov-dic
+	Spese famigliari
+	Documenti
