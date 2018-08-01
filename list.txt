@@ -5,9 +5,10 @@
 		Pagate
 		Ricevute
 	Banca
+		Documenti
 		Prese in carico
 		Ricevute bonifici
-		RIcevute F24
+		Ricevute F24
 	Fatture emesse
 		01-fat-emesse-gen-feb-mar
 		02-fat-emesse-apr-mag-giu
