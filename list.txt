@@ -1,4 +1,13 @@
 2018
+	Cedolini dottoressa
+	Cedolini segretaria
+	Certificazioni uniche
+		Pagate
+		Ricevute
+	Banca
+		Prese in carico
+		Ricevute bonifici
+		RIcevute F24
 	Fatture emesse
 		01-fat-emesse-gen-feb-mar
 		02-fat-emesse-apr-mag-giu
@@ -6,8 +15,51 @@
 		04-fat-emesse-ott-nov-dic
 	Fatture ricevute
 		01-fat-ricevute-gen-feb-mar
+			Amazon personali
+			Amazon professione
+			Amazon ricevute personali
+			Amazon ricevute professione
+			Assicurazioni
+			Spese sanitarie
+			Famiglia
+			Software
+			Trasporti
+			Altre spese professionali
+			Altre spese personali
 		02-fat-ricevute-apr-mag-giu
+			Amazon personali
+			Amazon professione
+			Amazon ricevute personali
+			Amazon ricevute professione
+			Assicurazioni
+			Spese sanitarie
+			Famiglia
+			Software
+			Trasporti
+			Altre spese professionali
+			Altre spese personali
 		03-fat-ricevute-lug-ago-set
+			Amazon personali
+			Amazon professione
+			Amazon ricevute personali
+			Amazon ricevute professione
+			Assicurazioni
+			Spese sanitarie
+			Famiglia
+			Software
+			Trasporti
+			Altre spese professionali
+			Altre spese personali
 		04-fat-ricevute-ott-nov-dic
-	Spese famigliari
+			Amazon personali
+			Amazon professione
+			Amazon ricevute personali
+			Amazon ricevute professione
+			Assicurazioni
+			Spese sanitarie
+			Famiglia
+			Software
+			Trasporti
+			Altre spese professionali
+			Altre spese personali
 	Documenti
