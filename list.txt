@@ -14,7 +14,7 @@
 		02-fat-emesse-apr-mag-giu
 		03-fat-emesse-lug-ago-set
 		04-fat-emesse-ott-nov-dic
-	Fatture ricevute
+	Spese effettuate
 		01-fat-ricevute-gen-feb-mar
 			Amazon personali
 			Amazon professione
@@ -25,6 +25,7 @@
 			Famiglia
 			Software
 			Trasporti
+			Tasse
 			Altre spese professionali
 			Altre spese personali
 		02-fat-ricevute-apr-mag-giu
@@ -37,6 +38,7 @@
 			Famiglia
 			Software
 			Trasporti
+			Tasse
 			Altre spese professionali
 			Altre spese personali
 		03-fat-ricevute-lug-ago-set
@@ -49,6 +51,7 @@
 			Famiglia
 			Software
 			Trasporti
+			Tasse
 			Altre spese professionali
 			Altre spese personali
 		04-fat-ricevute-ott-nov-dic
@@ -61,6 +64,7 @@
 			Famiglia
 			Software
 			Trasporti
+			Tasse
 			Altre spese professionali
 			Altre spese personali
 	Documenti
