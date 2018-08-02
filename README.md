@@ -4,12 +4,14 @@ Make a folder structure by text file.
 Change list.txt and use a tab for subfolder.  
 
 To console:  
-`php autoload.php`
+`php autoload.php show`  
+`php autoload.php create`  
+`php autoload.php purge`
 
 ## Todo
   
 - verify conflict with name upper/lower case
-- purge (remove all empty folder)
-- add argument to create/purge
+- ~~purge (remove all empty folder)~~
+- ~~add argument to create/purge~~
 - add argument to change name file load
 - add argument to zip 
