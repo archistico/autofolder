@@ -12,7 +12,7 @@ class Cartella {
         $this->address = $address;
     }
 
-    public function write() {
+    public function Write() {
         // Scrivila se non esiste
         if(!file_exists($this->root.$this->address)) {
             if(mkdir($this->root.$this->address, 0777, true)) {
@@ -23,12 +23,17 @@ class Cartella {
         }
     }
 
-    public function erase() {
+    public function Erase() {
         // Cancellala solo se vuota
         if(file_exists($this->root.$this->address)) {
-            //unlink('homestead.bak');
+            if(rmdir($this->root.$this->address)) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
         }
-        return true;
     }
 }
 
@@ -105,10 +110,27 @@ class Cartelle {
 
     public function Create() {
         foreach($this->list as $dir) {
-            if($dir->write()) {
+            if($dir->Write()) {
                 echo "Create: ".$dir->root.$dir->address."\n";
             } else {
-                echo "Failed create: ".$dir->root.$dir->address."\n";
+                echo "Failed: ".$dir->root.$dir->address."\n";
+            }
+        }
+    }
+
+    public function Purge() {
+        foreach($this->list as $dir) {
+            $numberFiles = 0;
+            $files = glob($dir->root.$dir->address . "*");
+            if ($files){
+                $numberFiles = count($files);
+            }
+            if($numberFiles==0) {
+                if($dir->Erase()) {
+                    echo "Purge : ".$dir->root.$dir->address."\n";
+                } else {
+                    echo "Failed: ".$dir->root.$dir->address."\n";
+                }
             }
         }
     }
@@ -130,5 +152,6 @@ if ($listFile) {
 $cartelle->Analyse();
 //$cartelle->Visualizza();
 $cartelle->Create();
+//$cartelle->Purge();
 
 ?>
