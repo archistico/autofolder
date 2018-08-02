@@ -100,7 +100,7 @@ class Cartelle {
         }
     }
 
-    public function Visualizza() {
+    public function Show() {
         foreach($this->list as $dir) {
             echo $dir->root.$dir->address."\n";
         }
@@ -134,21 +134,40 @@ class Cartelle {
     }
 }
 
-$cartelle = new Cartelle();
+// ------------------------------------------------------------------
+// ----------------------------- MAIN -------------------------------
+// ------------------------------------------------------------------
+
+if(!empty($argv[1])) {
+    $command = strtolower($argv[1]);
+} else {
+    echo "------- HELP AUTOLOAD -------\n";
+    echo "php autoload.php show   : to show a structure folder from file list.txt\n";
+    echo "php autoload.php create : to create a structure folder\n";
+    echo "php autoload.php purge  : to purge empty folders\n";
+    echo "------- by Archistico -------\n";
+    return 0;
+}
+
+$folders = new Cartelle();
 
 $listFile = fopen("list.txt", "r");
 if ($listFile) {
     while (($line = fgets($listFile)) !== false) {
-        $cartelle->AddText($line); 
+        $folders->AddText($line); 
     }
     fclose($listFile);
 } else {
     echo "Errore nella lettura del file list.txt";
 }
 
-$cartelle->Analyse();
-//$cartelle->Visualizza();
-$cartelle->Create();
-//$cartelle->Purge();
+$folders->Analyse();
+
+switch($command) {
+    case "create": $folders->Create(); break;
+    case "purge": $folders->Purge(); break;
+    case "show": $folders->Show(); break;
+}
+
 
 ?>
