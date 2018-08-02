@@ -70,8 +70,10 @@ class Cartelle {
             }
 
             if(($numberTab < $numberTabLast) && ($numberTab<>0)) {
-                array_pop($levelMother);
-                array_pop($levelMother);
+                $diff = abs($numberTab - $numberTabLast);
+                for($x = 0; $x <= ($diff); $x++) {
+                    array_pop($levelMother);
+                }
                 array_push($levelMother, $dirText);
             }
             
