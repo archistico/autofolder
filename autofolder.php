@@ -13,7 +13,6 @@ class Cartella {
     }
 
     public function Write() {
-        // Scrivila se non esiste
         if(!file_exists($this->root.$this->address)) {
             if(mkdir($this->root.$this->address, 0777, true)) {
                 return true;
@@ -24,7 +23,6 @@ class Cartella {
     }
 
     public function Erase() {
-        // Cancellala solo se vuota
         if(file_exists($this->root.$this->address)) {
             if(rmdir($this->root.$this->address)) {
                 return true;
@@ -145,7 +143,6 @@ if ($listFile) {
     }
     fclose($listFile);
 } else {
-    // error opening the file.
     echo "Errore nella lettura del file list.txt";
 }
 
